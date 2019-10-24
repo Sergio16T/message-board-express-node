@@ -17,8 +17,7 @@ router.get('/new', function(req, res, next){
 });
 
 router.post('/new', function (req, res, next){
-  messages.push({text: req.body.message, user: req.body.name, added: new Date()}); 
-  //res.render('index',{title: 'Mini Message Board', messages: messages}); 
+  messages.push({text: req.body.message, user: req.body.name, added: new Date()});  
   res.redirect('/'); 
 })
 
